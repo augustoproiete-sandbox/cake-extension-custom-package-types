@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0;netstandard2.0;net461</TargetFrameworks>
+    <RootNamespace>Cake.PackageType.Addin</RootNamespace>
+
+    <AssemblyName>Cake.PackageType.Addin</AssemblyName>
+    <AssemblyVersion>0.0.1.0</AssemblyVersion>
+    <GenerateAssemblyVersionAttribute>true</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>true</GenerateAssemblyFileVersionAttribute>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <DebugType>portable</DebugType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+
+    <NoWarn>$(NoWarn);NU5048</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <MinClientVersion>4.0.0</MinClientVersion>
+    <PackageType>CakeAddin</PackageType>
+    <PackageId>Cake.PackageType.Addin</PackageId>
+    <Version>0.0.1-local</Version>
+    <Authors>C. Augusto Proiete &amp; Contributors</Authors>
+    <Company>augustoproiete.net</Company>
+    <Description>Cake addin for testing the CakeAddin custom package type.</Description>
+    <Copyright>Copyright 2021 C. Augusto Proiete &amp; Contributors - Provided under the MIT License</Copyright>
+    <PackageTags>cake;cake-addin;sample;poc;cake-extensions;cake-build;cake-contrib</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>images\icon.png</PackageIcon>
+    <PackageIconUrl>https://raw.githubusercontent.com/augustoproiete-sandbox/cake-extension-custom-package-types/master/asset/cake-extension-custom-package-types-nuget.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/augustoproiete-sandbox/cake-extension-custom-package-types</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/augustoproiete-sandbox/cake-extension-custom-package-types/releases</PackageReleaseNotes>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/augustoproiete-sandbox/cake-extension-custom-package-types.git</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cake.Core" Version="0.33.0" PrivateAssets="All" />
+    <PackageReference Include="Cake.Common" Version="0.33.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\asset\cake-extension-custom-package-types-nuget.png" Pack="true" Visible="false" PackagePath="images\icon.png" />
+  </ItemGroup>
+
+</Project>

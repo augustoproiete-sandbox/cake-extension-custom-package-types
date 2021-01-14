@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{94007ABD-C9BA-4CFD-9DB3-95037620A388}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.PackageType.Addin", "src\Cake.PackageType.Addin\Cake.PackageType.Addin.csproj", "{AE042E45-6F73-4969-818F-8043B595D8E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.PackageType.Module", "src\Cake.PackageType.Module\Cake.PackageType.Module.csproj", "{55A38D95-7A09-46F5-95F9-D5F8401FF217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.PackageType.Recipe", "src\Cake.PackageType.Recipe\Cake.PackageType.Recipe.csproj", "{FE757B18-65D6-4200-B7C6-0F492445B986}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{7925AB43-7C2B-43ED-8BEA-B9A70338A4AC}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		build.cake = build.cake
+		build.cmd = build.cmd
+		build.ps1 = build.ps1
+		build.sh = build.sh
+		cake.config = cake.config
+		global.json = global.json
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE042E45-6F73-4969-818F-8043B595D8E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE042E45-6F73-4969-818F-8043B595D8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE042E45-6F73-4969-818F-8043B595D8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE042E45-6F73-4969-818F-8043B595D8E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55A38D95-7A09-46F5-95F9-D5F8401FF217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A38D95-7A09-46F5-95F9-D5F8401FF217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A38D95-7A09-46F5-95F9-D5F8401FF217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A38D95-7A09-46F5-95F9-D5F8401FF217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE757B18-65D6-4200-B7C6-0F492445B986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE757B18-65D6-4200-B7C6-0F492445B986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE757B18-65D6-4200-B7C6-0F492445B986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE757B18-65D6-4200-B7C6-0F492445B986}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE042E45-6F73-4969-818F-8043B595D8E9} = {94007ABD-C9BA-4CFD-9DB3-95037620A388}
+		{55A38D95-7A09-46F5-95F9-D5F8401FF217} = {94007ABD-C9BA-4CFD-9DB3-95037620A388}
+		{FE757B18-65D6-4200-B7C6-0F492445B986} = {94007ABD-C9BA-4CFD-9DB3-95037620A388}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63BAE9AB-CA42-45E6-A64C-AE9668638616}
+	EndGlobalSection
+EndGlobal

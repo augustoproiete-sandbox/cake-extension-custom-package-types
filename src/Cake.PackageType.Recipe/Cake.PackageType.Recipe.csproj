@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <NoWarn>$(NoWarn);NU5048;NU5128</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <MinClientVersion>4.0.0</MinClientVersion>
+    <PackageType>CakeRecipe</PackageType>
+    <PackageId>Cake.PackageType.Recipe</PackageId>
+    <Version>0.0.1-local</Version>
+    <Authors>C. Augusto Proiete &amp; Contributors</Authors>
+    <Company>augustoproiete.net</Company>
+    <Description>Cake recipe for testing the CakeRecipe custom package type.</Description>
+    <Copyright>Copyright 2021 C. Augusto Proiete &amp; Contributors - Provided under the MIT License</Copyright>
+    <PackageTags>cake;cake-recipe;sample;poc;cake-extensions;cake-build;cake-contrib</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>images\icon.png</PackageIcon>
+    <PackageIconUrl>https://raw.githubusercontent.com/augustoproiete-sandbox/cake-extension-custom-package-types/master/asset/cake-extension-custom-package-types-nuget.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/augustoproiete-sandbox/cake-extension-custom-package-types</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/augustoproiete-sandbox/cake-extension-custom-package-types/releases</PackageReleaseNotes>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/augustoproiete-sandbox/cake-extension-custom-package-types.git</RepositoryUrl>
+
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <IncludeSymbols>false</IncludeSymbols>
+    <IncludeSource>false</IncludeSource>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking> 
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="**\*" />
+    <Content Remove="**\*" />
+    <None Remove="**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Content\**\*" Pack="true" PackagePath="Content" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\asset\cake-extension-custom-package-types-nuget.png" Pack="true" Visible="false" PackagePath="images\icon.png" />
+  </ItemGroup>
+
+</Project>
