@@ -1,0 +1,9 @@
+#windows
+Thumbs.db
+
+#osx
+.DS_Store
+._*
+
+#cake
+.cake/
